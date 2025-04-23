@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/copyright.css">
     <link rel="stylesheet" href="css/mobile-preview.css">
+    <link rel="stylesheet" href="css/template-features.css">
+    <link rel="stylesheet" href="css/enhanced-preview.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -181,80 +183,316 @@
         </div>
     </section>
 
+    <section id="template-functions" class="template-features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Funcionalidades <span class="text-accent">Detalhadas do Template</span></h2>
+                <p>Conheça todas as ferramentas poderosas que você receberá com este template CRM</p>
+            </div>
+            
+            <div class="features-list-container">
+                <div class="feature-item">
+                    <div class="feature-title">
+                        <i class="fas fa-filter"></i>
+                        Pipeline Visual Kanban
+                    </div>
+                    <p class="feature-description">Acompanhe cada oportunidade movendo os cartões de cliente entre as etapas de Prospecto, Lead, Ligação Inicial e Proposta.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-title">
+                        <i class="fas fa-users"></i>
+                        Gerenciamento de Contatos
+                    </div>
+                    <p class="feature-description">Organize todos os seus contatos com fotos, dados profissionais, informações de contato e histórico de comunicações em uma interface intuitiva.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-title">
+                        <i class="fas fa-building"></i>
+                        Cadastro de Empresas
+                    </div>
+                    <p class="feature-description">Mantenha um catálogo completo das empresas com as quais você trabalha, incluindo logotipos, sites, segmentos e contatos relacionados.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-title">
+                        <i class="fas fa-money-bill-wave"></i>
+                        Controle Financeiro
+                    </div>
+                    <p class="feature-description">Acompanhe valores de negócios, status de pagamentos, saldos restantes e histórico de transações em um sistema organizado.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-title">
+                        <i class="fas fa-calendar-alt"></i>
+                        Agenda de Reuniões
+                    </div>
+                    <p class="feature-description">Visualize sua agenda de reuniões em um calendário integrado com acompanhamento de histórico de encontros anteriores e próximos compromissos.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-title">
+                        <i class="fas fa-file-invoice"></i>
+                        Controle de Propostas
+                    </div>
+                    <p class="feature-description">Armazene todas as suas propostas e controle seu status, datas de envio, valores e feedback dos clientes em um só lugar.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-title">
+                        <i class="fas fa-chart-pie"></i>
+                        Dashboard Completo
+                    </div>
+                    <p class="feature-description">Visualize todas as suas métricas de negócio, contatos prioritários e status de deals em uma interface visual completa e intuitiva.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-title">
+                        <i class="fas fa-tags"></i>
+                        Sistema de Etiquetas
+                    </div>
+                    <p class="feature-description">Classifique seus contatos, empresas e oportunidades com etiquetas personalizáveis que facilitam a filtragem e organização.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-title">
+                        <i class="fas fa-history"></i>
+                        Histórico de Atividades
+                    </div>
+                    <p class="feature-description">Registre cada interação com seus clientes, incluindo e-mails, chamadas e reuniões, mantendo um histórico completo de comunicações.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-title">
+                        <i class="fas fa-tasks"></i>
+                        Gerenciamento de Tarefas
+                    </div>
+                    <p class="feature-description">Crie e acompanhe tarefas relacionadas a clientes e negócios, com datas de vencimento e lembretes automáticos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="preview" class="preview">
         <div class="container">
             <div class="section-header">
                 <h2>Veja o <span class="text-accent">Template em Ação</span></h2>
                 <p>Demonstração interativa do seu futuro sistema CRM</p>
             </div>
-            <div class="preview-container">
-                <div class="preview-tabs">
-                    <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
-                    <button class="tab-btn" data-tab="client">Detalhes do Cliente</button>
-                    <button class="tab-btn" data-tab="pipeline">Visão do Pipeline</button>
+            
+            <div class="view-toggle-container">
+                <div class="view-toggle">
+                    <div class="view-toggle-option active" id="show-modern">
+                        <i class="fas fa-palette"></i> Visual Moderno
+                    </div>
+                    <div class="view-toggle-option" id="show-original">
+                        <i class="fas fa-columns"></i> Visual Notion
+                    </div>
                 </div>
-                <div class="preview-content">
-                    <div class="tab-content active" id="dashboard-tab">
-                        <div class="preview-img dashboard-preview">
-                            <div class="crm-layout full">
-                                <div class="sidebar">
-                                    <div class="sidebar-header">
-                                        <div class="crm-logo">
-                                            <i class="fas fa-address-card"></i> CRM
+            </div>
+            
+            <div class="preview-container-enhanced" id="modern-view">
+                <div class="preview-navigation">
+                    <div class="preview-nav-item active" data-view="dashboard">
+                        <div class="preview-nav-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <div class="preview-nav-label">Dashboard</div>
+                    </div>
+                    <div class="preview-nav-item" data-view="pipeline">
+                        <div class="preview-nav-icon"><i class="fas fa-filter"></i></div>
+                        <div class="preview-nav-label">Pipeline</div>
+                    </div>
+                    <div class="preview-nav-item" data-view="contacts">
+                        <div class="preview-nav-icon"><i class="fas fa-users"></i></div>
+                        <div class="preview-nav-label">Contatos</div>
+                    </div>
+                    <div class="preview-nav-item" data-view="companies">
+                        <div class="preview-nav-icon"><i class="fas fa-building"></i></div>
+                        <div class="preview-nav-label">Empresas</div>
+                    </div>
+                    <div class="preview-nav-item" data-view="deals">
+                        <div class="preview-nav-icon"><i class="fas fa-money-bill-wave"></i></div>
+                        <div class="preview-nav-label">Negócios</div>
+                    </div>
+                    <div class="preview-nav-item" data-view="calendar">
+                        <div class="preview-nav-icon"><i class="fas fa-calendar-alt"></i></div>
+                        <div class="preview-nav-label">Agenda</div>
+                    </div>
+                </div>
+                
+                <div class="preview-content-enhanced">
+                    <!-- Dashboard View -->
+                    <div id="dashboard-view" class="preview-view active fade-in">
+                        <div class="dashboard-fullview">
+                            <div class="dashboard-header">
+                                <div class="dashboard-title">
+                                    <i class="fas fa-tachometer-alt"></i> Dashboard CRM
+                                </div>
+                                <div class="dashboard-actions">
+                                    <button class="dashboard-action-btn">
+                                        <i class="fas fa-plus"></i> Novo Lead
+                                    </button>
+                                    <button class="dashboard-action-btn">
+                                        <i class="fas fa-filter"></i> Filtrar
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="dashboard-sections">
+                                <div class="dashboard-sidebar">
+                                    <div class="sidebar-group">
+                                        <div class="sidebar-title">Navegação</div>
+                                        <div class="sidebar-menu">
+                                            <div class="sidebar-menu-item active">
+                                                <i class="fas fa-home"></i> Dashboard
+                                            </div>
+                                            <div class="sidebar-menu-item">
+                                                <i class="fas fa-user-plus"></i> Novo Lead
+                                            </div>
+                                            <div class="sidebar-menu-item">
+                                                <i class="fas fa-users"></i> Contatos
+                                            </div>
+                                            <div class="sidebar-menu-item">
+                                                <i class="fas fa-building"></i> Empresas
+                                            </div>
+                                            <div class="sidebar-menu-item">
+                                                <i class="fas fa-chart-line"></i> Pipeline
+                                            </div>
+                                            <div class="sidebar-menu-item">
+                                                <i class="fas fa-money-bill-wave"></i> Negócios
+                                            </div>
+                                            <div class="sidebar-menu-item">
+                                                <i class="fas fa-calendar-alt"></i> Agenda
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="sidebar-section">
-                                        <div class="sidebar-title">Navegação</div>
-                                        <div class="sidebar-item active">
-                                            <i class="fas fa-home"></i> Início
-                                        </div>
-                                        <div class="sidebar-item">
-                                            <i class="fas fa-user-plus"></i> Novo Lead
-                                        </div>
-                                        <div class="sidebar-item">
-                                            <i class="fas fa-building"></i> Empresas
-                                        </div>
-                                        <div class="sidebar-item">
-                                            <i class="fas fa-users"></i> Contatos
-                                        </div>
-                                        <div class="sidebar-item">
-                                            <i class="fas fa-chart-line"></i> Pipeline
+                                    
+                                    <div class="sidebar-group">
+                                        <div class="sidebar-title">Clientes Essenciais</div>
+                                        <div class="sidebar-menu">
+                                            <div class="sidebar-menu-item">
+                                                <i class="fas fa-user"></i> Cliente 1
+                                            </div>
+                                            <div class="sidebar-menu-item">
+                                                <i class="fas fa-user"></i> Cliente 2
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="content-area">
-                                    <div class="content-section">
-                                        <div class="section-header">
-                                            <i class="fas fa-star"></i> Clientes Essenciais
+                                
+                                <div class="dashboard-main">
+                                    <div class="dashboard-card">
+                                        <div class="card-header">
+                                            <div class="card-title">
+                                                <i class="fas fa-filter"></i> Pipeline de Vendas
+                                            </div>
+                                            <div class="card-actions">
+                                                <button class="dashboard-action-btn">
+                                                    <i class="fas fa-expand-alt"></i> Expandir
+                                                </button>
+                                            </div>
                                         </div>
-                                        <div class="client-cards">
-                                            <div class="client-card">
-                                                <div class="client-avatar"></div>
-                                                <div class="client-info">
-                                                    <div class="client-name">Cliente 1</div>
-                                                    <div class="client-title">Diretor de Vendas</div>
-                                                    <div class="client-company">
-                                                        <i class="fas fa-building"></i> Tesla
+                                        
+                                        <div class="pipeline-grid">
+                                            <div class="pipeline-stage">
+                                                <div class="pipeline-stage-header stage-prospect">
+                                                    <i class="fas fa-user-plus"></i> Prospecto
+                                                </div>
+                                                <div class="pipeline-cards">
+                                                    <div class="pipeline-card">
+                                                        <div class="card-badge company-nvidia">
+                                                            <i class="fas fa-building"></i> Nvidia
+                                                        </div>
+                                                        <div class="card-name">Cliente 3</div>
+                                                        <div class="card-info">
+                                                            <i class="fas fa-calendar-day"></i> 21 Set, 2024
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="client-card">
-                                                <div class="client-avatar"></div>
-                                                <div class="client-info">
-                                                    <div class="client-name">Cliente 2</div>
-                                                    <div class="client-title">CEO</div>
-                                                    <div class="client-company">
-                                                        <i class="fas fa-building"></i> Apple
+                                            
+                                            <div class="pipeline-stage">
+                                                <div class="pipeline-stage-header stage-lead">
+                                                    <i class="fas fa-filter"></i> Lead
+                                                </div>
+                                                <div class="pipeline-cards">
+                                                    <div class="pipeline-card">
+                                                        <div class="card-badge company-apple">
+                                                            <i class="fas fa-building"></i> Apple
+                                                        </div>
+                                                        <div class="card-name">Cliente 2</div>
+                                                        <div class="card-info">
+                                                            <i class="fas fa-calendar-day"></i> 12 Set, 2024
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="client-card add-card">
-                                                <div class="add-button">
-                                                    <i class="fas fa-plus"></i>
+                                            
+                                            <div class="pipeline-stage">
+                                                <div class="pipeline-stage-header stage-discovery">
+                                                    <i class="fas fa-phone"></i> Ligação Inicial
                                                 </div>
-                                                <span>Novo Cliente</span>
+                                                <div class="pipeline-cards">
+                                                    <!-- Empty column -->
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="pipeline-stage">
+                                                <div class="pipeline-stage-header stage-proposal">
+                                                    <i class="fas fa-handshake"></i> Proposta
+                                                </div>
+                                                <div class="pipeline-cards">
+                                                    <div class="pipeline-card">
+                                                        <div class="card-badge company-tesla">
+                                                            <i class="fas fa-building"></i> Tesla
+                                                        </div>
+                                                        <div class="card-name">Cliente 1</div>
+                                                        <div class="card-info">
+                                                            <i class="fas fa-calendar-day"></i> 1 Set, 2024
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+                                    </div>
+                                    
+                                    <div class="dashboard-card">
+                                        <div class="card-header">
+                                            <div class="card-title">
+                                                <i class="fas fa-money-bill-wave"></i> Negócios Recentes
+                                            </div>
+                                        </div>
+                                        
+                                        <table class="deals-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Nome</th>
+                                                    <th>Valor</th>
+                                                    <th>Status</th>
+                                                    <th>Cliente</th>
+                                                    <th>Pago</th>
+                                                    <th>Restante</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Website Design</td>
+                                                    <td>R$1.500,00</td>
+                                                    <td><span class="table-badge badge-unpaid">Não Pago</span></td>
+                                                    <td>Cliente 2</td>
+                                                    <td>R$0,00</td>
+                                                    <td><span class="amount-negative">R$1.500,00</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SEO Services</td>
+                                                    <td>R$1.000,00</td>
+                                                    <td><span class="table-badge badge-partial">Pgto. Parcial</span></td>
+                                                    <td>Cliente 1</td>
+                                                    <td>R$500,00</td>
+                                                    <td><span class="amount-negative">R$500,00</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
@@ -845,5 +1083,6 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/enhanced-preview.js"></script>
 </body>
 </html>
