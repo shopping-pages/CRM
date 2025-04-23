@@ -1,0 +1,121 @@
+/* Estilos específicos para a demonstração em dispositivos móveis */
+
+/* Melhoria da visualização do preview em celulares */
+@media (max-width: 767px) {
+    .preview-container {
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 40px;
+    }
+    
+    .preview-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    
+    .tab-btn {
+        flex: 1 1 30%;
+        font-size: 0.85rem;
+        padding: 8px 5px;
+        border-radius: 6px;
+    }
+    
+    .tab-content {
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    
+    /* Ajustes específicos para o preview em modo dashboard */
+    .preview-img.dashboard-preview {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .client-preview,
+    .pipeline-view {
+        overflow: hidden;
+        max-width: 100%;
+    }
+    
+    /* Melhorias para o layout de CRM em mobile */
+    .crm-layout.full {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .crm-layout.full .sidebar {
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        padding: 10px 5px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE e Edge */
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    
+    .crm-layout.full .sidebar::-webkit-scrollbar {
+        display: none; /* Chrome, Safari e Opera */
+    }
+    
+    .sidebar-section {
+        display: flex;
+    }
+    
+    .sidebar-title {
+        display: none;
+    }
+    
+    .sidebar-item {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        margin-right: 8px;
+        padding: 6px 10px;
+        font-size: 0.7rem;
+        border-radius: 4px;
+    }
+    
+    .sidebar-item i {
+        margin-right: 4px;
+    }
+    
+    /* Pipeline mobile */
+    .pipeline-section h3 {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+    
+    .pipeline-cards {
+        display: flex;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        -webkit-overflow-scrolling: touch;
+        gap: 10px;
+    }
+    
+    .pipeline-column {
+        flex: 0 0 auto;
+        min-width: 130px;
+        max-width: 150px;
+    }
+}
+
+/* Ajustes para telefones bem pequenos */
+@media (max-width: 320px) {
+    .tab-btn {
+        font-size: 0.7rem;
+        padding: 6px 3px;
+    }
+    
+    .sidebar-item {
+        padding: 4px 8px;
+        font-size: 0.65rem;
+    }
+    
+    .pipeline-column {
+        min-width: 110px;
+    }
+}
